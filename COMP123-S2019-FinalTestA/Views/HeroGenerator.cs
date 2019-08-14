@@ -94,6 +94,9 @@ namespace COMP123_S2019_FinalTestA.Views
             }
         }
 
+        /// <summary>
+        /// Laods Names
+        /// </summary>
         public void Loadnames()
         {            
             lastNames = File.ReadAllLines("../../Data/firstNames.txt");        
@@ -101,6 +104,10 @@ namespace COMP123_S2019_FinalTestA.Views
             firstNames = File.ReadAllLines("../../Data/lastNames.txt");           
         }
 
+
+        /// <summary>
+        /// Generate Names
+        /// </summary>
         public void GenerateNames()
         {
             int num = random.Next(lastNames.Length);
